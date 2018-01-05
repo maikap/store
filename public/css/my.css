@@ -1,0 +1,202 @@
+.left-wrapper{
+    position: fixed;
+    top:110px;
+    left: 0;
+    float: left;
+    width: 250px;
+    background-color: #F5F5F5;
+    height: auto;
+    min-height: 100vh;
+}
+.left-wrapper ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    list-style-type: none;
+    margin: 0;
+}
+.left-wrapper ul li{
+    display: block;
+}
+.left-wrapper ul li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color:#636363;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: all 0.3s ease-out;
+
+}
+.left-wrapper ul li .material-icons{
+    height:30px;
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    background-color: #13C482;
+    border-radius: 50%;
+    text-align: center;
+    color:#fff;
+    font-size: 17px;
+}
+.left-wrapper ul li a:hover{
+    color:#13C482;
+    transition: all 0.3s ease-out;
+}
+.right-wrapper{
+    position: relative;
+    float: left;
+    margin-left: 250px;
+    width: calc(100% - 290px);
+    padding: 20px;
+    height: auto;
+    min-height: 100px;
+}
+.right-header{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 20px;
+}
+.right-header h3{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    color:#636363;
+    font-weight: 500;
+    margin: 0;
+}
+.right-header .right-button{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin: 5px 0;
+    background-color: #13C482;
+    color:#fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+}
+.update-button{
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background-color: #13C482;
+    color:#fff;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.14);
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    border: transparent;
+}
+/*Profile*/
+.image-wrapper{
+    position: relative;
+    float: left;
+    margin-left: calc(50% - 80px);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.image-wrapper img{
+    display: inline-block;
+    width: 100%;
+    border-radius: 50%;
+}
+.image-wrapper .image-change-button{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.14);
+    cursor: pointer;
+    color:#13C482;
+    text-align: center;
+}
+.image-wrapper .image-change-button i{
+    line-height: 40px;
+}
+.profile-details {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+.right-content  .group{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+}
+.right-content  .small-group{
+    position: relative;
+    float: left;
+    padding: 15px 0;
+    width: calc(50% - 20px);
+}
+.right-content  .left-group{
+    margin-right: 20px;
+}
+.right-content  .right-group{
+    margin-left: 20px;
+}
+.right-content  .drop-select{
+    width: calc(100% - 120px);
+}
+/*Orders*/
+.order-container .right-content ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.order-container .right-content ul li{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.14);
+    display: flex;
+}
+.order-container .right-content li .left-elem{
+    position: relative;
+    float: left;
+    flex-basis: calc(30% - 41px);
+    border-right: 1px solid rgb(230,230,230);
+    padding: 20px;
+}
+.order-container .right-content li .left-elem h3{
+    color:#13C482;
+    margin: 0;
+    font-weight: 500;
+}
+.order-container .right-content li .left-elem label{
+    display: block;
+    margin: 10px 0;
+    color:#636363;
+    font-size: 13px;
+}

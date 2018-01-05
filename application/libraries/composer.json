@@ -1,0 +1,7 @@
+{
+  "require": {
+    "omnipay/omnipay": "~2.0",
+    "xepan/ccavenue": "dev-master"
+  
+  }
+}

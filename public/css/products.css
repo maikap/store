@@ -1,0 +1,360 @@
+
+.col-scroll:before, .col-scroll:after {
+    box-sizing:inherit;
+}
+.col-wrapper{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.col-scroll:before,.col-scroll:after{
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.col-scroll:after {
+    clear: both;
+}
+.col-scroll{
+    *zoom:1;
+}
+.left-wrapper{
+    position: relative;
+    float: left;
+    width: 250px;
+    height: auto;
+    margin: 5px 5px 5px 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    min-height: 300px;
+    font-size: 13px;
+}
+.left-wrapper .loading-wrapper{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+
+}
+.left-wrapper .loading-wrapper img{
+    display: inline-block;
+    width: 30px;
+}
+.left-wrapper .cards{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 1px 3px rgba(0,0,0,.14);
+}
+.left-wrapper .card-header{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    cursor: pointer;
+    height: 50px;
+    background-color: #fff;
+}
+.left-wrapper .card-header h3{
+    display: inline-block;
+    margin: 0;
+    height: 50px;
+    text-transform: uppercase;
+    color:#636363;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.left-wrapper .card-header .header-icon{
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    margin: 0;
+    height: 50px;
+}
+.left-wrapper .card-header .header-icon i{
+    height: 50px;
+    line-height: 50px;
+}
+.left-wrapper .card-footer{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    height: 50px;
+    background-color: #fff;
+}
+.left-wrapper .card-footer .more-button{
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    display: inline-block;
+    color:#13C482;
+}
+.left-wrapper .card-content{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    overflow: hidden;
+    padding: 10px 0;
+    border-top: 1px solid rgb(230,230,230);
+    background-color: #fff;
+}
+.left-wrapper .card-content ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.left-wrapper .card-content ul li{
+    display: block;
+}
+.left-wrapper .card-content ul li .control{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    float: left;
+    width: calc(100% - 65px);
+    padding: 12px 20px 12px 45px;
+    transition: all 0.3s ease-out;
+}
+.left-wrapper .card-content ul li .control-indicator{
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.right-wrapper{
+    position: relative;
+    float: left;
+    width: calc(100% - 270px);
+    margin: 5px 0;
+    font-size: 13px;
+}
+.right-wrapper .item-action-bar{
+    position: relative;
+    float: left;
+    width: calc(100% - 50px);
+    padding: 20px;
+    height: auto;
+    margin: 5px 10px 5px 5px;
+    min-height: 50px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.14);
+}
+.right-wrapper .item-action-bar .row-1,
+.right-wrapper .item-action-bar .row-2{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.right-wrapper .item-action-bar .row-1 a{
+    display: inline-block;
+    color:#999;
+    text-decoration: none;
+    font-size: 13px;
+}
+.right-wrapper .item-action-bar .row-1 a:hover{
+    text-decoration: underline;
+}
+.right-wrapper .item-action-bar .cols{
+    position: relative;
+    float: left;
+    width: 50%;
+}
+.right-wrapper .item-action-bar h3{
+    display: block;
+    color:#00c176;
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+}
+.right-wrapper .item-action-bar h3 .sub-label{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    color:#999;
+    font-weight: 400;
+}
+.right-wrapper .item-action-bar .page-navigation{
+    display: block;
+}
+.right-wrapper .item-action-bar .page-navigation a{
+    color:#636363;
+    display: inline-block;
+    text-decoration: none;
+}
+.right-wrapper .item-action-bar .page-navigation a:hover{
+    text-decoration: underline;
+}
+.right-wrapper .item-action-bar .total-result-count{
+    display: block;
+    margin: 10px 0;
+}
+.right-wrapper .item-action-bar .col-2{
+    text-align: right;
+}
+.right-wrapper .item-action-bar .field-label{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.right-wrapper .item-action-bar .drop-select{
+    width: 200px;
+    background-color: #fff;
+    float: right;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.14);
+    border-bottom: none;
+}
+.item-wrapper{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.item-wrapper .product-grid{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: calc(25% - 10px);
+    height: 330px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.14);
+    transition: all 0.3s ease-out;
+}
+.item-wrapper .product-grid:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 7px rgba(0,0,0,.2);
+    transition: all 0.3s ease-out;
+}
+.item-wrapper .product-grid .product-image{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.item-wrapper .product-grid .product-image img{
+    display: inline-block;
+    height: auto;
+    max-height: calc(100% - 40px);
+    width: auto;
+    max-width: calc(100% - 40px);
+    margin: 20px;
+    transition: all 0.3s ease-out;
+}
+.item-wrapper .product-grid .info-label{
+    display: block;
+    margin: 5px 0;
+    text-align: left;
+    color:#636363;
+}
+.item-wrapper .product-grid .on-offers{
+    position: absolute;
+    top:20px;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background-color:#13c482;
+    color:#fff;
+    z-index: 99;
+    vertical-align: middle;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.item-wrapper .product-grid .out-of-stock{
+    background-color:#ff5252;
+    position: absolute;
+    top:20px;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color:#fff;
+    z-index: 99;
+    vertical-align: middle;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.item-wrapper .product-grid .product-info{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    padding:0 20px;
+    height: auto;
+}
+.item-wrapper .product-grid .item-name{
+    color:#444;
+}
+.item-wrapper .product-grid .item-desc{
+    color:#999;
+}
+.item-wrapper .product-grid .item-price{
+    color:#13c482;
+}
+.item-wrapper .product-grid  .previous-price{
+    text-decoration: line-through;
+}
+.item-wrapper .product-grid .discount{
+    color:#999;
+}
+.item-wrapper .product-grid .ratings{
+    color: #636363;
+    font-weight: 500;
+    vertical-align: middle;
+    display: block;
+}
+.item-wrapper .product-grid .ratings i{
+    font-size: 13px;
+    vertical-align: middle;
+    transform: rotate(0.03deg);
+    display: inline-block;
+    margin-top: -3px;
+}
+.item-wrapper .product-grid .offers{
+    font-size: 13px;
+    color:#13C482;
+    display: block;
+    margin-top: 5px;
+}
+.loadmore-wrapper{
+    position: relative;
+    float: left;
+    width: calc(100% - 10px);
+    margin: 0 5px;
+    padding: 20px 0;
+    text-align: center;
+}
+.loadmore-wrapper .loadmore-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#13C482;
+    font-weight: 500;
+    border-radius: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.14);
+    cursor: pointer;
+}
