@@ -1,23 +1,16 @@
-
-.col-scroll:before, .col-scroll:after {
-    box-sizing:inherit;
+.main-rows{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
 }
+
 .col-wrapper{
     position: relative;
     float: left;
     width: 100%;
     height: auto;
     box-sizing: border-box;
-}
-.col-scroll:before,.col-scroll:after{
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-.col-scroll:after {
-    clear: both;
-}
-.col-scroll{
-    *zoom:1;
 }
 .left-wrapper{
     position: relative;
@@ -29,6 +22,11 @@
     position: sticky;
     min-height: 300px;
     font-size: 13px;
+}
+.fixed-left{
+    position: fixed;
+    left: 0;
+    bottom:0;
 }
 .left-wrapper .loading-wrapper{
     position: absolute;
@@ -139,10 +137,12 @@
 }
 .right-wrapper{
     position: relative;
-    float: left;
+    float: right;
     width: calc(100% - 270px);
-    margin: 5px 0;
+    margin-right: 5px;
+    margin-top: 5px;
     font-size: 13px;
+    margin-bottom: 5px;
 }
 .right-wrapper .item-action-bar{
     position: relative;
@@ -217,10 +217,9 @@
 }
 .right-wrapper .item-action-bar .drop-select{
     width: 200px;
-    background-color: #fff;
+    background-color: #F5F5F5;
     float: right;
     margin-top: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.14);
     border-bottom: none;
 }
 .item-wrapper{
@@ -233,7 +232,7 @@
     position: relative;
     float: left;
     width: calc(25% - 10px);
-    height: 330px;
+    height: 350px;
     margin: 5px;
     text-decoration: none;
     background-color: #fff;
@@ -334,11 +333,21 @@
     display: inline-block;
     margin-top: -3px;
 }
-.item-wrapper .product-grid .offers{
-    font-size: 13px;
-    color:#13C482;
+.item-wrapper .product-grid .delivery-time{
     display: block;
     margin-top: 5px;
+    color:#999;
+}
+.item-wrapper .product-grid .delivery-time .sub-label{
+    font-weight: 500;
+    color:#13c482;
+}
+.item-wrapper .product-grid .offers{
+    font-size: 13px;
+    color:#999;
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
 }
 .loadmore-wrapper{
     position: relative;
@@ -347,14 +356,15 @@
     margin: 0 5px;
     padding: 20px 0;
     text-align: center;
+    display: none;
 }
 .loadmore-wrapper .loadmore-button{
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff;
-    color:#13C482;
+    color:#999;
     font-weight: 500;
-    border-radius: 30px;
+    border-radius: 2px;
     box-shadow: 0 1px 3px rgba(0,0,0,.14);
     cursor: pointer;
 }

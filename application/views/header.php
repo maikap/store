@@ -45,6 +45,7 @@
             else{
                 $('.bottom-row').stop(0).show('fast');
             }
+            myHeight();
         });
         $(document).ready(function(){
             $('.hamburger-menu').click(function(){
@@ -59,13 +60,20 @@
                 $(this).find('.material-icons').toggleClass('nav-icon-toggle');
                 $(this).parent().find('.nav-menu-1').stop(0).slideToggle('fast');
             })
-        })
-        function fsheight(){
-            var height=$('.left-wrapper').innerHeight();
-            var viewheight=$(document).innerHeight();
-            var top=parseFloat(parseFloat(viewheight) - parseFloat(height) - 10);
-            return top;
+        });
+        function myHeight(){
+            var lheight=$('.my-container .left-wrapper').innerHeight();
+            var rheight=$('.my-container .right-wrapper').innerHeight();
+            var scrolled=$(window).scrollTop();
+            var fixheight=parseFloat(rheight) - parseFloat(lheight);
+            if(fixheight > parseFloat(scrolled - 110)){
+                $('.my-container .left-wrapper').removeClass('normaliza-fix').css('margin-top',0);
+            }
+            else{
+                $('.my-container .left-wrapper').addClass('normaliza-fix').css('margin-top',fixheight);
+            }
         }
+
     </script>
 </head>
 <body>
@@ -74,10 +82,10 @@
         <div class="container">
             <div class="row flex-container">
                 <div class="cols col-1 col-sm-flex">
-                    <a href="" class="logo-wrapper"><img src="<?php echo base_url('public/assets/logos/soppelo.png') ?>"></a>
+                    <a href="" class="logo-wrapper"><img src="<?php echo base_url('public/assets/logos/soppelo-white.png') ?>"></a>
                 </div>
                 <div class="cols col-2 col-sm-flex">
-                    <span class="location-select">Kolkata - 700074 <i class="material-icons">expand_more</i></span>
+                    <span class="location-select">South Dumdum - 700074 <i class="material-icons">expand_more</i></span>
                 </div>
                 <div class="cols col-3 search-wrapper">
                     <input type="text" class="search-input search-input-nav" placeholder="What are you looking for?">

@@ -1,4 +1,4 @@
-<div id="main-container">
+<div id="main-container" class="my-container">
     <div class="left-wrapper">
         <ul>
             <li><a href="<?php echo base_url('my/profile') ?>"><i class="material-icons">person</i>My Profile</a></li>
@@ -15,24 +15,64 @@
         <div class="right-content">
            <ul>
                <li>
-                   <div class="left-elem">
-                       <h3>#89714832646392</h3>
-                       <label>Placed On: 14 Nov 2017</label>
-                       <label>Amount: Rs 4520</label>
-                       <label>Quantity: 3</label>
-                   </div>
-                   <div class="right-elem">
-                       <div class="shipment-content">
-                           <div class="shipment-header">
-                               <h3>Delivered</h3>
-                               <label>Shipemnt 1 : 1 items</label>
-                               <label>Delivered on:14 Nov 2017</label>
+                   <h3 class="order-id">#264832423692</h3>
+                   <div class="detail-content-wrapper">
+                       <div class="left-elem">
+                           <div class="left-row-1">
+                               <div class="item-image-group">
+                                   <img src="http://static.compareindia.news18.com/compareindia/gallery/images/2017/sep/iphone8_2_131233357275.jpg">
+                                   <img src="http://www.hunanitrading.com/image/data/Apple%20MacBook%20Pro%20MLW82.jpg">
+                                   <img src="http://static.compareindia.news18.com/compareindia/gallery/images/2017/jun/5_3_221717453438.jpg">
+                               </div>
+                               <span class="order-placed">Placed on: 14th July 2018</span>
                            </div>
-                           <div class="shipment-details">
-                               <span class="image-block"><img src="<?php echo base_url('public/assets/demo-image.jpg') ?>"></span>
+                           <div class="left-row-2">
+                               <div class="left-col-1">
+                                   <span class="info-label">Price: 1425</span>
+                                   <span class="info-label">Number of items: 1</span>
+                               </div>
+                               <div class="left-col-2">
+                                   <span class="info-label">Status</span>
+                                   <span class="info-label">Items has been delivered</span>
+                               </div>
                            </div>
+
+                       </div>
+                       <div class="right-elem">
+                           <a href="#" class="buttons view-order-button">Details</a>
                        </div>
                    </div>
+
+               </li>
+               <li>
+                   <h3 class="order-id">#264832423692</h3>
+                   <div class="detail-content-wrapper">
+                       <div class="left-elem">
+                           <div class="left-row-1">
+                               <div class="item-image-group">
+                                   <img src="http://static.compareindia.news18.com/compareindia/gallery/images/2017/sep/iphone8_2_131233357275.jpg">
+                                   <img src="http://www.hunanitrading.com/image/data/Apple%20MacBook%20Pro%20MLW82.jpg">
+                                   <img src="http://static.compareindia.news18.com/compareindia/gallery/images/2017/jun/5_3_221717453438.jpg">
+                               </div>
+                               <span class="order-placed">Placed on: 14th July 2018</span>
+                           </div>
+                           <div class="left-row-2">
+                               <div class="left-col-1">
+                                   <span class="info-label">Price: 1425</span>
+                                   <span class="info-label">Number of items: 1</span>
+                               </div>
+                               <div class="left-col-2">
+                                   <span class="info-label">Status</span>
+                                   <span class="info-label">Items has been delivered</span>
+                               </div>
+                           </div>
+
+                       </div>
+                       <div class="right-elem">
+                           <a href="#" class="buttons view-order-button">Details</a>
+                       </div>
+                   </div>
+
                </li>
            </ul>
         </div>

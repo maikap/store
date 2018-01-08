@@ -7,6 +7,9 @@ class Products extends CI_Controller
         date_default_timezone_set('Asia/Kolkata');
 
     }
+    public function index(){
+        echo "cccc";
+    }
     /*Main FUnctions***************************************************************************************************************/
     public function product_lookup()
     {

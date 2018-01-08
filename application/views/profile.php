@@ -1,4 +1,4 @@
-<div id="main-container">
+<div id="main-container" class="my-container">
     <div class="left-wrapper">
         <ul>
             <li><a href="<?php echo base_url('my/profile') ?>"><i class="material-icons">person</i>My Profile</a></li>
@@ -12,7 +12,7 @@
         <div class="right-header">
             <h3>Profile</h3>
         </div>
-        <div class="right-content">
+        <div class="right-content profile-content-wrapper">
             <div class="image-wrapper">
                 <img src="<?php echo base_url('public/assets/demo-avatars.jpg') ?>">
                 <span class="image-change-button"><i class="material-icons">camera_alt</i></span>
